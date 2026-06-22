@@ -12,7 +12,7 @@ namespace Shoper.Persistence.Context
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=EFE\\SQLEXPRESS; database=Shoper; IntegratedSecurity=True; TrustServerCertificate=True");
+            optionsBuilder.UseSqlServer("Data Source=EFE\\SQLEXPRESS; database=Shoper;Integrated Security=True; TrustServerCertificate=True");
         }
 
         public DbSet<Category> Categories { get; set; }
